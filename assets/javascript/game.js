@@ -77,15 +77,16 @@ $(document).ready(function gameBegins() {
         console.log(userNumber + " user score")
         // if userNumber == goalNumber {game restarts, wins++, winning sounds}
         if (userNumber == goal) {
+            $('audio#clink5')[0].play();
             $(".gem").fadeOut('slow', winnerWinnerChickenDinner()).delay(200).fadeIn(400);
             reset();
         }
         else if (userNumber > goal) {
-            $('audio#clank')[0].play();
+            $('audio#clank5')[0].play();
             $(".gem").fadeOut('slow', loser()).delay(200).fadeIn(400);
             reset();
         } else {
-            $('audio#clink4')[0].play();
+            $('audio#clink2')[0].play();
             $(".gem").fadeOut('fast').fadeIn('fast');
         }
 
