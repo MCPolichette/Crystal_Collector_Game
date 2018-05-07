@@ -1,12 +1,23 @@
 
-body{
+body { background: rgb(80, 75, 75) !important; 
     font-family: 'Russo One', sans-serif;
     font-family: 'Bangers', cursive;
-    background:rgb(80, 75, 75);
+   
+}
+.jumbotron{
+    font-family: 'Russo One', sans-serif;
+    padding-top: 20px;
+    
+    background-image: url(../images/jumbotron.jpg); 
+    min-height: 538px;
+    margin-bottom: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
 }
 #gameBox{
     padding-top: 20px;
-    color:white;
+    
     background-image: url(../images/mineBackground.jpg); 
     min-height: 538px;
     margin-bottom: 0px;

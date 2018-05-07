@@ -82,7 +82,7 @@ $(document).ready(function gameBegins() {
             reset();
         }
         else if (userNumber > goal) {
-            $('audio#clank5')[0].play();
+            $('audio#clank')[0].play();
             $(".gem").fadeOut('slow', loser()).delay(200).fadeIn(400);
             reset();
         } else {
