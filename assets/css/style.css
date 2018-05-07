@@ -1,20 +1,63 @@
 
-
+body{
+    background:rgb(80, 75, 75);
+}
+#gameBox{
+    padding-top: 20px;
+    color:white;
+    background-image: url(../images/mineBackground.jpg); 
+    min-height: 538px;
+    margin-bottom: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* text-shadow: black 0.3em 0.3em 0.3em; */
+}
 /* WORKING CSS*/
+#gembox{
+    padding-bottom:20px;
+}
 #goalNumber{
     height:50px;
     width:500px;
 
+}
+.card{
+    height:180px;
+    margin:auto;
+    opacity: 0.5;
+    color:blue;
+    font-weight: 50%;
 }
 #userTotal {
     height:50px;
     width:500px;
 
 }
+.top-buffer{
+    margin-top: 60px;
+}
 .gem {
+    height:150px;
+    width:auto;
     border: 2px solid rgb(255, 251, 39); 
     border-radius: 10px;  
 }
 .gem:hover {
-    box-shadow: 0 0 5px 3px rgba(34, 102, 124, 0.863);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.733);
+}
+.center-block {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+.card-header{
+    color:black;
+    font-weight: 200%;
+}
+#win{
+    height:20px
+}
+#loss{
+    height:20px
 }

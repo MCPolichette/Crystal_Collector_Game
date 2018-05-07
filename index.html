@@ -21,72 +21,88 @@
         <!-- Jumbotron with CRYSTAL COLLECTOR title -->
         <div class="jumbotron">
             <h1>Crystal Collector</h1>
-            <p>The best crystal collecting game of 2018</p>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below, By clicking on a crystal you will add a specific amount of points to your total
+                score.
+            </p>
+            <p>You win the game by matching your totoal score to random number, you lose the game if your total score goes above
+                the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it</p>
+            <p>Each time when the game starts, the game will change the values of each crystal</p>
         </div>
         <!-- Directions Card  -->
-        <div class="row">
-            <div class="col-md-8" id="directions">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Game Directions</div>
-                    <div class="panel-body">
-                        <p>You will be given a random number at the start of the game.</p>
-                        <p>There are four crystals below, By clicking on a crystal you will add a specific amount of points
-                            to your total score.</p>
-                        <p>You win the game by matching your totoal score to random number, you lose the game if your total
-                            score goes above the random number.</p>
-                        <p>The value of each crystal is hidden from you until you click on it</p>
-                        <p>Each time when the game starts, the game will change the values of each crystal</p>
+        <div class="row" id="directions">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Game Directions</div>
+                <div class="panel-body">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container" id="gameBox">
+            <div class="row top-buffer">
+                <!-- Goal number card -->
+                <div class="col-md-4 col-md-offset-3 score">
+                    <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                        <div class="card-header ">Goal Number</div>
+                        <div class="card-body text-secondary ">
+                            <h3 class="card-title " id="goalNumber">GOAL NUMBER HERE</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- user total card -->
+                <div class="col-md-4 score">
+                    <div class="card border-success mb-3 " style="max-width: 18rem; ">
+                        <div class="card-header ">Your Total:</div>
+                        <div class="card-body text-success ">
+                            <h3 class="card-title " id="userTotal">YOUR TOTAL HERE</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 score ">
+                    <div class="card border-success mb-3 " style="max-width: 18rem; ">
+                        <div class="card-header ">you haven't won yet</div>
+
+                        <h3 class="card-title" id="wins">Wins</h3>
+                        <div class="card-header">Losses</div>
+                        <h3 class="card-title" id="losses"></h3>
+
+
+
+
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" id="score">
-                <div class="panel panel-default">
-                    <div class="panel-heading">WINS</div>
-                    <div class="panel-body" id="win">win total </div>
+
+
+            <!-- 4 crystals card -->
+            <div class="row top-buffer" id="gemBox">
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal0.PNG " alt="crystala.PNG " class="rounded-circle gem " id="gem1" value="0">
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">LOSSES</div>
-                    <div class="panel-body" id="loss">loss total </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal1.PNG " alt="crystalb.PNG " class="rounded-circle gem " id="gem2" value="0">
                 </div>
-            </div>
-        </div>
-        <!-- Goal number card -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card border-secondary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Goal Number</div>
-                    <div class="card-body text-secondary">
-                        <h5 class="card-title" id="goalNumber">GOAL NUMBER HERE </h5>
-                    </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal2.PNG " alt="crystalc.PNG " class="rounded-circle gem " id="gem3" value="0">
+                </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal3.PNG " alt="crystald.PNG " class="rounded-circle gem " id="gem4" value="0">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card border-success mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Your Total:</div>
-                    <div class="card-body text-success">
-                        <h5 class="card-title" id="userTotal">USER TOTAL HERE</h5>
-
-                    </div>
-                </div>
+            <div class "row">
+                <h3>CHOOSE WISELY</h3>
             </div>
         </div>
-        <!-- user total card -->
-        <div class="row">
+    </div>
+    <!-- score/ wins VS losses counter -->
+    <div class="row ">
 
-
-        </div>
-        <!-- 4 crystals card -->
-        <div class="row">
-            <img src="assets/images/crystal0.PNG" alt="crystala.PNG" class="rounded-circle gem" id="gem1">
-            <img src="assets/images/crystal1.PNG" alt="crystalb.PNG" class="rounded-circle gem" id="gem2">
-            <img src="assets/images/crystal2.PNG" alt="crystalc.PNG" class="rounded-circle gem" id="gem3">
-            <img src="assets/images/crystal3.PNG" alt="crystald.PNG" class="rounded-circle gem" id="gem4">
-        </div>
-
-        <!-- score/ wins VS losses counter -->
-        <div class="row">
-
-        </div>
+    </div>
 
     </div>
 
