@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Collector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Russo+One" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
@@ -13,6 +14,24 @@
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="assets/javascript/game.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <audio id="clank" preload="auto">
+        <source src="assets/audio/clank.wav"></source>
+    </audio>
+    <audio id="clink1" preload="auto">
+        <source src="assets/audio/clink1.wav"></source>
+    </audio>
+    <audio id="clink2" preload="auto">
+        <source src="assets/audio/clink2.wav"></source>
+    </audio>
+    <audio id="clink3" preload="auto">
+        <source src="assets/audio/clink3.wav"></source>
+    </audio>
+    <audio id="clink4" preload="auto">
+        <source src="assets/audio/clink4.wav"></source>
+    </audio>
+
 </head>
 
 <body>
@@ -33,14 +52,6 @@
         <!-- Directions Card  -->
         <div class="row" id="directions">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">Game Directions</div>
-                <div class="panel-body">
-
-                </div>
-            </div>
-
-
         </div>
         <div class="container" id="gameBox">
             <div class="row top-buffer">
@@ -56,7 +67,7 @@
                 <!-- user total card -->
                 <div class="col-md-4 score">
                     <div class="card border-success mb-3 " style="max-width: 18rem; ">
-                        <div class="card-header ">Your Total:</div>
+                        <div class="card-header">Your Total:</div>
                         <div class="card-body text-success ">
                             <h3 class="card-title " id="userTotal">YOUR TOTAL HERE</h3>
 
@@ -65,9 +76,9 @@
                 </div>
                 <div class="col-md-4 score ">
                     <div class="card border-success mb-3 " style="max-width: 18rem; ">
-                        <div class="card-header ">you haven't won yet</div>
+                        <div class="card-header ">Wins</div>
 
-                        <h3 class="card-title" id="wins">Wins</h3>
+                        <h3 class="card-title" id="wins">You haven't won yet.</h3>
                         <div class="card-header">Losses</div>
                         <h3 class="card-title" id="losses"></h3>
 
@@ -81,7 +92,7 @@
 
             <!-- 4 crystals card -->
             <div class="row top-buffer" id="gemBox">
-                <div class="col-sm-3">
+                <div class="col-sm-3 col-sm-offset-3">
                     <img src="assets/images/crystal0.PNG " alt="crystala.PNG " class="rounded-circle gem " id="gem1" value="0">
                 </div>
                 <div class="col-sm-3">

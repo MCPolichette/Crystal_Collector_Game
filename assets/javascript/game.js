@@ -1,5 +1,7 @@
+
 //game starts
 $(document).ready(function gameBegins() {
+
     // game variables
     var userNumber = 0;
     var goal = "";
@@ -68,6 +70,7 @@ $(document).ready(function gameBegins() {
     // gameplay
     // user clicks on crystal, the value is added to userscore
     $(".gem").on('click', function () {
+
         var x = $(this);
         userNumber = +userNumber + +(x).val();
         $("#userTotal").text(userNumber);
@@ -78,8 +81,12 @@ $(document).ready(function gameBegins() {
             reset();
         }
         else if (userNumber > goal) {
+            $('audio#clank')[0].play();
             $(".gem").fadeOut('slow', loser()).delay(200).fadeIn(400);
             reset();
+        } else {
+            $('audio#clink4')[0].play();
+            $(".gem").fadeOut('fast').fadeIn('fast');
         }
 
     })
@@ -90,5 +97,14 @@ $(document).ready(function gameBegins() {
 
 
 })
+// OTHER FUNCTION IDEAS
+// changes gems randomly
+// (function() {
+//   var urls = ['1', '2', '3', '4'];
+//   function swap() {
+//     document.getElementById('theImage').setAttribute('src', urls[Math.round(Math.random() * urls.length)] + '.jpg');
+//   }
+
+
 
 // if userNumber > goalNumber {game restarts, losses++, sad sounds}

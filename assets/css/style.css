@@ -1,5 +1,7 @@
 
 body{
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Bangers', cursive;
     background:rgb(80, 75, 75);
 }
 #gameBox{
@@ -17,9 +19,9 @@ body{
 #gembox{
     padding-bottom:20px;
 }
-#goalNumber{
+#goalNumber, #userTotal{
     height:50px;
-    width:500px;
+    
 
 }
 .card{
@@ -29,11 +31,13 @@ body{
     color:blue;
     font-weight: 50%;
 }
-#userTotal {
-    height:50px;
-    width:500px;
-
+.card-header{
+  height:34px;
+    color:white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 110%;
 }
+
 .top-buffer{
     margin-top: 60px;
 }
@@ -45,6 +49,9 @@ body{
 }
 .gem:hover {
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.733);
+}
+.card-title, .card-header {
+    text-align: center;
 }
 .center-block {
     margin-left:auto;
