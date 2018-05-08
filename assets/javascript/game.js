@@ -11,7 +11,7 @@ $(document).ready(function gameBegins() {
     var gem2val = 0;
     var gem3val = 0;
     var gem4val = 0;
-
+    var gemPics = ["assets/images/crystal0.PNG", "assets/images/crystal1.PNG", "assets/images/crystal2.PNG", "assets/images/crystal3.PNG", "assets/images/crystal4.PNG", "assets/images/crystal5.PNG"];
 
     //game generates a random goal number between  19 and 120
     goal = (19 + Math.floor(Math.random() * 101));
@@ -45,22 +45,42 @@ $(document).ready(function gameBegins() {
         losses++;
         $("#losses").text(losses);
     }
+    // a function I found to try and shuffle the pictures displayed
+    function shuffle(a) {
+        var j, x, i;
+        for (i = a.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+        return a;
+    }
 
     function reset() {
         //game reset
         userNumber = 0;
+        shuffle(gemPics);
+        // console.log(gemPics);
         $("#userTotal").text("YOUR TOTAL HERE");
         goal = (19 + Math.floor(Math.random() * 101));
         $("#goalNumber").text(goal);
         // game assigns random numbers to 4 crystal buttons numbers between 1 - 12
         gem1val = (Math.floor(Math.random() * 19) + 1);
         $("#gem1").val(gem1val);
+        $("#gem1").attr("src", gemPics[0]);
         gem2val = (Math.floor(Math.random() * 19) + 1);
         $("#gem2").val(gem2val);
+        $("#gem2").attr("src", gemPics[1]);
         gem3val = (Math.floor(Math.random() * 19) + 1);
         $("#gem3").val(gem3val);
+        $("#gem3").attr("src", gemPics[2]);
         gem4val = (Math.floor(Math.random() * 19) + 1);
         $("#gem4").val(gem4val);
+        $("#gem4").attr("src", gemPics[3]);
+        $(".gem").delay(100).fadeIn(400);
+
+
         // game sets users user number to 0
         console.log("goal-" + goal, "  user-" + userNumber);
         console.log(gem1val, gem2val, gem3val, gem4val)
@@ -78,14 +98,15 @@ $(document).ready(function gameBegins() {
         // if userNumber == goalNumber {game restarts, wins++, winning sounds}
         if (userNumber == goal) {
             $('audio#clink5')[0].play();
-            $(".gem").fadeOut('slow', winnerWinnerChickenDinner()).delay(200).fadeIn(400);
+            $(".gem").fadeOut('slow', winnerWinnerChickenDinner()).delay(200)
             reset();
         }
         else if (userNumber > goal) {
             $('audio#clank')[0].play();
-            $(".gem").fadeOut('slow', loser()).delay(200).fadeIn(400);
+            $(".gem").fadeOut('slow', loser()).delay(200)
             reset();
         } else {
+
             $('audio#clink2')[0].play();
             $(".gem").fadeOut('fast').fadeIn('fast');
         }
