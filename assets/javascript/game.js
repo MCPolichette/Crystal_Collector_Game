@@ -41,7 +41,7 @@ $(document).ready(function gameBegins() {
         reset();
     }
     function loser() {
-        alert("you went too far.... try again");
+        alert("You went too far.... Please try again");
         losses++;
         $("#losses").text(losses);
     }
@@ -80,7 +80,6 @@ $(document).ready(function gameBegins() {
         $("#gem4").attr("src", gemPics[3]);
         $(".gem").delay(100).fadeIn(400);
 
-
         // game sets users user number to 0
         console.log("goal-" + goal, "  user-" + userNumber);
         console.log(gem1val, gem2val, gem3val, gem4val)
@@ -101,12 +100,13 @@ $(document).ready(function gameBegins() {
             $(".gem").fadeOut('slow', winnerWinnerChickenDinner()).delay(200)
             reset();
         }
+        // if userNumber > goalNumber {game restarts, losses++, sad sounds}
         else if (userNumber > goal) {
             $('audio#clank')[0].play();
             $(".gem").fadeOut('slow', loser()).delay(200)
             reset();
+            // game continues
         } else {
-
             $('audio#clink2')[0].play();
             $(".gem").fadeOut('fast').fadeIn('fast');
         }
@@ -120,13 +120,5 @@ $(document).ready(function gameBegins() {
 
 })
 // OTHER FUNCTION IDEAS
-// changes gems randomly
-// (function() {
-//   var urls = ['1', '2', '3', '4'];
-//   function swap() {
-//     document.getElementById('theImage').setAttribute('src', urls[Math.round(Math.random() * urls.length)] + '.jpg');
-//   }
 
 
-
-// if userNumber > goalNumber {game restarts, losses++, sad sounds}
