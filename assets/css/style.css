@@ -14,14 +14,13 @@ body { background: rgb(80, 75, 75) !important;
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
-    text-shadow: black 0.3em 0.3em 0.3em;
+    text-shadow: black 0.4em 0.4em 0.4em;
 }
 #gameBox{
     padding-top: 20px;
-    
+    margin-bottom:200px;
     background-image: url(../images/mineBackground.jpg); 
     min-height: 538px;
-    margin-bottom: 0px;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -30,6 +29,7 @@ body { background: rgb(80, 75, 75) !important;
 /* WORKING CSS*/
 #gembox{
     padding-bottom:20px;
+    
 }
 #goalNumber, #userTotal{
     height:50px;
