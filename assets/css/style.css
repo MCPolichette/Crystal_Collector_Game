@@ -1,13 +1,20 @@
 
-body { background: rgb(80, 75, 75) !important; 
+body { 
+    background-image: url(../images/minerals.jpg) !important;
+    background-repeat: repeat; 
     font-family: 'Russo One', sans-serif;
     font-family: 'Bangers', cursive;
    
 }
+.textStyle{
+    font-family: 'Russo One', sans-serif;
+    color:white;
+    text-shadow: black 0.4em 0.4em 0.4em;
+}
 .jumbotron{
     font-family: 'Russo One', sans-serif;
     padding-top: 20px;
-    
+    margin-top: 40px;
     background-image: url(../images/jumbotron.jpg); 
     min-height: 538px;
     margin-bottom: 0px;
@@ -17,8 +24,9 @@ body { background: rgb(80, 75, 75) !important;
     text-shadow: black 0.4em 0.4em 0.4em;
 }
 #gameBox{
+    font-family: 'Russo One', sans-serif;
     padding-top: 20px;
-    margin-bottom:200px;
+    margin-bottom:40px;
     background-image: url(../images/mineBackground.jpg); 
     min-height: 538px;
     background-size: cover;

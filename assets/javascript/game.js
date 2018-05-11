@@ -62,7 +62,7 @@ $(document).ready(function gameBegins() {
         userNumber = 0;
         shuffle(gemPics);
         // console.log(gemPics);
-        $("#userTotal").text("YOUR TOTAL HERE");
+        $("#userTotal").text("YOUR TOTAL");
         goal = (19 + Math.floor(Math.random() * 101));
         $("#goalNumber").text(goal);
         // game assigns random numbers to 4 crystal buttons numbers between 1 - 12
@@ -78,6 +78,7 @@ $(document).ready(function gameBegins() {
         gem4val = (Math.floor(Math.random() * 19) + 1);
         $("#gem4").val(gem4val);
         $("#gem4").attr("src", gemPics[3]);
+
         $(".gem").delay(100).fadeIn(400);
 
         // game sets users user number to 0
@@ -97,27 +98,20 @@ $(document).ready(function gameBegins() {
         // if userNumber == goalNumber {game restarts, wins++, winning sounds}
         if (userNumber == goal) {
             $('audio#clink5')[0].play();
-            $(".gem").fadeOut('slow', winnerWinnerChickenDinner()).delay(200)
+            $(".gem").fadeOut('slow', winnerWinnerChickenDinner()).delay(200);
             reset();
         }
         // if userNumber > goalNumber {game restarts, losses++, sad sounds}
         else if (userNumber > goal) {
             $('audio#clank')[0].play();
-            $(".gem").fadeOut('slow', loser()).delay(200)
+            $(".gem").fadeOut('slow', loser()).delay(200);
             reset();
             // game continues
         } else {
             $('audio#clink2')[0].play();
             $(".gem").fadeOut('fast').fadeIn('fast');
         }
-
     })
-
-
-
-
-
-
 })
 // OTHER FUNCTION IDEAS
 
