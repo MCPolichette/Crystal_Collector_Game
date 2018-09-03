@@ -1,94 +1,139 @@
-
-body { 
-    background-image: url(../images/minerals.jpg) !important;
-    background-repeat: repeat; 
-    font-family: 'Russo One', sans-serif;
-    font-family: 'Bangers', cursive;
-   
+body {
+  background-image: url(../images/minerals.jpg) !important;
+  background-repeat: repeat;
+  font-family: "Russo One", sans-serif;
+  font-family: "Bangers", cursive;
 }
-.textStyle{
-    font-family: 'Russo One', sans-serif;
-    color:white;
-    text-shadow: black 0.4em 0.4em 0.4em;
+.textStyle {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  text-shadow: black 0.4em 0.4em 0.4em;
 }
-.jumbotron{
-    font-family: 'Russo One', sans-serif;
-    padding-top: 20px;
-    margin-top: 40px;
-    background-image: url(../images/jumbotron.jpg); 
-    min-height: 538px;
-    margin-bottom: 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color:white;
-    text-shadow: black 0.4em 0.4em 0.4em;
+.jumbotron {
+  font-family: "Russo One", sans-serif;
+  padding-top: 20px;
+  margin-top: 40px;
+  background-image: url(../images/jumbotron.jpg);
+  min-height: 538px;
+  margin-bottom: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.4em 0.4em 0.4em;
 }
-#gameBox{
-    font-family: 'Russo One', sans-serif;
-    padding-top: 20px;
-    margin-bottom:40px;
-    background-image: url(../images/mineBackground.jpg); 
-    min-height: 538px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    
+#gameBox {
+  font-family: "Russo One", sans-serif;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  background-image: url(../images/mineBackground.jpg);
+  min-height: 538px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 /* WORKING CSS*/
-#gembox{
-    padding-bottom:20px;
-    
+#gembox {
+  padding-bottom: 20px;
 }
-#goalNumber, #userTotal{
-    height:50px;
-    font-size: 250%;
-    
-
+#goalNumber,
+#userTotal {
+  height: 50px;
+  font-size: 250%;
 }
-.card{
-    height:180px;
-    margin:auto;
-    opacity: 0.5;
-    color:blue;
-    font-weight: 50%;
+.card {
+  height: 180px;
+  margin: auto;
+  opacity: 0.5;
+  color: blue;
+  font-weight: 50%;
 }
-.card-header{
-  height:34px;
-    color:white;
-    font-family: 'Russo One', sans-serif;
-    font-size: 110%;
+.card-header {
+  height: 34px;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 110%;
 }
 
-.top-buffer{
-    margin-top: 60px;
+.top-buffer {
+  margin-top: 60px;
 }
 .gem {
-    text-align: center;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    max-width: 150px; 
-    width:100%;
-    border: 2px solid rgb(255, 251, 39); 
-    border-radius: 10px;  
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  max-width: 150px;
+  width: 100%;
+  border: 2px solid rgb(255, 251, 39);
+  border-radius: 10px;
 }
 .gem:hover {
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.733);
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.733);
 }
-.card-title, .card-header {
-    text-align: center;
+.card-title,
+.card-header {
+  text-align: center;
 }
 .center-block {
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-.card-header{
-    color:black;
-    font-weight: 200%;
+.card-header {
+  color: black;
+  font-weight: 200%;
 }
-#win{
-    height:20px
+#win {
+  height: 20px;
 }
-#loss{
-    height:20px
+#loss {
+  height: 20px;
+}
+
+/* Footer Added */
+.pagebottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #666666;
+  height: 3.3em;
+  color: white;
+  text-align: center;
+  border: #4aaaa5;
+  border-width: 15px;
+}
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  color: white;
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  color: #000;
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  float: right;
+}
+.bottom-center {
+  color: white;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  width: 100%;
+  border-top-color: #cccccc;
+  border-top-width: 2px;
+  overflow: auto;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom-name {
+  float: left;
+  background: #22524f;
+  color: white;
+  font-size: 26px;
+  padding: 10px;
 }
