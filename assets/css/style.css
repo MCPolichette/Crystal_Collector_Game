@@ -9,6 +9,9 @@ body {
   color: white;
   text-shadow: black 0.4em 0.4em 0.4em;
 }
+.container {
+  margin-bottom: 100px;
+}
 .jumbotron {
   font-family: "Russo One", sans-serif;
   padding-top: 20px;
