@@ -1,6 +1,7 @@
 body {
   background-image: url(../images/minerals.jpg) !important;
   background-repeat: repeat;
+  background-attachment: fixed;
   font-family: "Russo One", sans-serif;
   font-family: "Bangers", cursive;
 }
